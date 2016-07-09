@@ -1,0 +1,83 @@
+html {
+  font-size: 10px; }
+  html body div, html body input, html body li {
+    box-sizing: border-box; }
+  html body div.container {
+    width: 1000px;
+    margin: 0 auto; }
+  html body .clear-fix, html body div.topbar:after, html body div.topbar div.right-menu div.link-bar ul.link:after, div.topbar div.right-menu div.link-bar html body ul.link:after, html body navi.navibar ul.navi-list:after, navi.navibar html body ul.navi-list:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden; }
+
+div.topbar {
+  padding: 10px 0px;
+  font-size: 1.4rem;
+  color: grey; }
+  div.topbar div.left-menu {
+    float: left;
+    padding-top: 5px; }
+    div.topbar div.left-menu span.weather {
+      margin-left: 20px; }
+  div.topbar div.right-menu {
+    float: right; }
+    div.topbar div.right-menu div {
+      display: inline-block;
+      position: relative; }
+      div.topbar div.right-menu div.search-bar {
+        width: 240px; }
+        div.topbar div.right-menu div.search-bar input {
+          outline: none;
+          padding: 5px;
+          width: 180px;
+          height: 30px;
+          border: 1px solid #ada7a7; }
+        div.topbar div.right-menu div.search-bar button {
+          position: absolute;
+          width: 60px;
+          height: 100%;
+          background: #EA3C3D;
+          outline: none;
+          border: 1px solid #ada7a7;
+          color: #ffffff; }
+      div.topbar div.right-menu div.link-bar ul.link {
+        list-style: none;
+        margin: 0px 20px;
+        padding: 0px; }
+        div.topbar div.right-menu div.link-bar ul.link li {
+          float: right;
+          width: 60px;
+          margin-left: 10px; }
+          div.topbar div.right-menu div.link-bar ul.link li a {
+            color: grey;
+            font-size: 1.4rem;
+            text-decoration: none; }
+
+div.topbanner {
+  background: grey; }
+  div.topbanner img {
+    width: 1000px;
+    height: 150px;
+    display: block; }
+
+navi.navibar ul.navi-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  navi.navibar ul.navi-list li.navi-item {
+    float: left;
+    width: 125px;
+    height: 40px;
+    padding-top: 9px;
+    text-align: center;
+    background-color: red;
+    border-right: 1px solid #a59d9d; }
+    navi.navibar ul.navi-list li.navi-item.active {
+      background: #775d5d; }
+    navi.navibar ul.navi-list li.navi-item:last-child {
+      border-right: none; }
+    navi.navibar ul.navi-list li.navi-item a {
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none; }

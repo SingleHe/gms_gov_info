@@ -21,8 +21,10 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
+    "gulp-swig": "^0.8.0",
     "gulp-uglify": "^1.5.1",
     "jquery": "^3.1.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "swig": "^1.4.2"
   }
 }

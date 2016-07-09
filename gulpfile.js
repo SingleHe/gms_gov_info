@@ -4,19 +4,26 @@ var cssmin = require("gulp-cssmin");
 var rename = require("gulp-rename");
 var concat = require('gulp-concat');
 var clean = require('gulp-clean');
-var sass = require('gulp-sass')
+var sass = require('gulp-sass');
+var swig= require('gulp-swig');
 var runSequence = require('run-sequence');
 
 gulp.task('default', function(cb) {
-    runSequence('clean-build',['vendor-js', 'build-js', 'build-sass'], cb);
+    runSequence('clean-build',['vendor-js', 'build-js', 'build-sass', 'build-template'], cb);
 });
 
 gulp.task('dev', function(cb) {
-    runSequence('clean-build',['vendor-js', 'build-js', 'build-sass'], 'watch', cb);
+    runSequence('clean-build',['vendor-js', 'build-js', 'build-sass', 'build-template'], 'watch', cb);
 });
 
 gulp.task('clean-build', function () {
-    return gulp.src('build/', {read: false})
+    // clean built css & js
+    // clean built html
+    return gulp.src([
+                'build/',
+                './**/*.html',
+                '!template/**/*.html'
+            ], {read: false})
             .pipe(clean());
 });
 
@@ -47,8 +54,17 @@ gulp.task('build-sass', function () {
     .pipe(gulp.dest('build/'));
 });
 
+gulp.task('build-template', function () {
+    // swig template
+    // { cache: false } for watch
+
+    return gulp.src('template/**/*.html')
+    .pipe(swig({defaults: { cache: false }}))
+    .pipe(gulp.dest('./'));
+});
 
 gulp.task('watch', function() {
     gulp.watch('src/**/*.js', ['build-js']);
     gulp.watch('src/**/*.scss', ['build-sass']);
+    gulp.watch('template/**/*.*', ['build-template']);
 });

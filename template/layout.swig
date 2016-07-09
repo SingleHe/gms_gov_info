@@ -5,8 +5,6 @@
 </head>
 <body>
     hello
-    
-from index
-
+    {% block body %}{% endblock %}
 </body>
 </html>

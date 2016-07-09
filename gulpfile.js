@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var cssmin = require("gulp-cssmin");
 var rename = require("gulp-rename");
@@ -7,13 +8,14 @@ var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var swig= require('gulp-swig');
 var runSequence = require('run-sequence');
+var plumber = require('gulp-plumber');
 
 gulp.task('default', function(cb) {
-    runSequence('clean-build',['vendor-js', 'build-js', 'build-sass', 'build-template'], cb);
+    runSequence('clean-build',['vendor-js', 'build-js', 'vendor-css', 'build-sass', 'build-template'], cb);
 });
 
 gulp.task('dev', function(cb) {
-    runSequence('clean-build',['vendor-js', 'build-js', 'build-sass', 'build-template'], 'watch', cb);
+    runSequence('clean-build',['vendor-js', 'build-js', 'vendor-css', 'build-sass', 'build-template'], 'watch', cb);
 });
 
 gulp.task('clean-build', function () {
@@ -48,6 +50,16 @@ gulp.task('build-js', function () {
 
 });
 
+gulp.task('vendor-css', function () {
+    return gulp.src([
+                'node_modules/normalize.css/normalize.css',
+            ])
+            .pipe(cssmin())
+            .pipe(concat('vendor.min.css'))
+            .pipe(gulp.dest('build/'));
+
+});
+
 gulp.task('build-sass', function () {
   return gulp.src('src/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -57,10 +69,12 @@ gulp.task('build-sass', function () {
 gulp.task('build-template', function () {
     // swig template
     // { cache: false } for watch
-
-    return gulp.src('template/**/*.html')
+    var stream = gulp.src('template/**/*.html')
+    .pipe(plumber())
     .pipe(swig({defaults: { cache: false }}))
     .pipe(gulp.dest('./'));
+
+    return stream;
 });
 
 gulp.task('watch', function() {

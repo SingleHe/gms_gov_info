@@ -5,22 +5,78 @@
 {% endblock %}
 
 {% block content %}
-    <div>
-        <div id='home-page-carousel' class='carousel'>
+    <div class="section1">
+        <!-- 跑马灯 -->
+        <div id='home-page-carousel' class='my-carousel'>
             <div class="carousel-content-panel home-page-carousel">
                 <div class='carousel-content-item'>
-                    <img src="./img/topbanner.png">
+                    <img src="./img/slide-1.png">
                 </div>
-                <div class='carousel-content-item'>your content</div>
-                <div class='carousel-content-item'>your content</div>
+                <div class='carousel-content-item'>
+                    <img src="./img/slide-1.png">
+                </div>
+                <div class='carousel-content-item'>
+                    <img src="./img/slide-1.png">
+                </div>
             </div>
             <div class="carousel-dot-panel">
                 <div class="carousel-text-items">
-                    <div data-id='0' class="carousel-text-item active">2016我县xxxxxxxxx发育良好</div>
-                    <div data-id='1' class="carousel-text-item">2</div>
-                    <div data-id='2' class="carousel-text-item">3</div>
+                    <div data-index='0' class="carousel-text-item active">2016我县xxxxxxxxx发育良好</div>
+                    <div data-index='1' class="carousel-text-item">2</div>
+                    <div data-index='2' class="carousel-text-item">3</div>
                 </div>
                 <!-- inject dots -->
+            </div>
+        </div>
+
+        <!-- 动态面板 -->
+        <div id='home-page-notice' class="my-tab">
+            <div class="tab-header">
+                <ul>
+                    <li class="active" data-index='1'>本地要闻</li>
+                    <li data-index='2'>民生新闻</li>
+                    <li data-index='3'>政务动态</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class='content active' data-index='1'>
+                    <ul>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">南海仲裁在即 多架疑中国空军涂装歼20战机升空(图)</a></p>
+                            <p class="date">04-24</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class='content ' data-index='2'>2</div>
+                <div class='content ' data-index='3'>3</div>
             </div>
         </div>
     </div>

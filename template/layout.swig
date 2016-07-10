@@ -18,6 +18,7 @@
     </div>
 
     <script src="./build/vendor.min.js" type="text/javascript"></script>
+    <script src="./build/common.js" type="text/javascript"></script>
     {% block script %}{% endblock %}
 </body>
 </html>

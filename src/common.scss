@@ -3,7 +3,7 @@ html {
     font-size: 10px;
 
     body {
-        div, input, li {
+        div, input, ul, li {
             box-sizing: border-box;
         }
         div.container {
@@ -145,7 +145,7 @@ navi.navibar {
 
 // plugins
 // - slick-carousel
-div.carousel {
+div.my-carousel {
     position: relative;
 
     div.carousel-content-panel {
@@ -156,7 +156,7 @@ div.carousel {
         bottom: 0;
         width: 100%;
         height: 50px;
-        background: #b1b1b1;
+        background: rgba(84, 84, 84, 0.80);
 
 
         div.carousel-text-items {
@@ -212,6 +212,89 @@ div.carousel {
                     button {
                         color: #e65151;
                         background: #e65151;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// - tab-panel
+div.my-tab {
+    div.tab-header {
+        ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 50px;
+            font-size: 1.6rem;
+            
+            &:after {
+                @extend .clear-fix;
+            }
+
+            li {
+                padding-top: 15px;
+                height: 100%;
+                float: left;
+                text-align: center;
+                width: 33.3333%;
+                color: #000;
+                cursor: pointer;
+
+                &.active {
+                    color: #ef2020;
+                    font-weight: bold;
+                    border-bottom: 4px solid #ef2020;
+                }
+            }
+        }
+    }
+    div.tab-content {
+        height: 248px;
+        position: relative;
+
+        div.content {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            display: none;
+            font-size: 1.4rem;
+
+            &.active {
+                display: block;
+            }
+
+            ul {
+                list-style: circle;
+                margin: 20px 0;
+                padding-left: 40px;
+
+                li {
+                    margin-top: 10px;
+
+                    p {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0px;
+                        padding: 0px;
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        &.title {
+                            width: 80%;
+                            text-overflow: ellipsis;/*这就是省略号喽*/        
+                            overflow: hidden;/*设置超过的隐藏*/
+                            white-space: nowrap;/*设置不折行*/
+                        }
+                        &.date {
+                            width: 18%;
+                        }
                     }
                 }
             }

@@ -1,4 +1,22 @@
-div#home-page-carousel {
-  width: 550px;
-  height: 350px;
-  background: #eee; }
+div.section1 {
+  padding: 10px; }
+  div.section1 div#home-page-carousel {
+    vertical-align: top;
+    width: 550px;
+    height: 300px;
+    background: #eee;
+    display: inline-block; }
+  div.section1 div#home-page-notice {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    width: 410px;
+    border: 1px solid #c5bfbf; }
+    div.section1 div#home-page-notice div.tab-header {
+      background: #efefef; }
+      div.section1 div#home-page-notice div.tab-header ul {
+        font-size: 1.7rem; }
+        div.section1 div#home-page-notice div.tab-header ul li {
+          float: left; }
+    div.section1 div#home-page-notice div.tab-content div.content {
+      font-size: 1.5rem; }

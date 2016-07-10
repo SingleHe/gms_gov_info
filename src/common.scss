@@ -1,3 +1,5 @@
+@import 'util';
+
 // global style
 html {
     font-size: 10px;
@@ -9,12 +11,6 @@ html {
         div.container {
             width: 1000px;
             margin: 0 auto;
-        }
-        .clear-fix {
-            content: '';
-            display: block;
-            clear: both;
-            visibility: hidden;
         }
     }
 } 
@@ -139,6 +135,63 @@ navi.navibar {
 
         &:after {
             @extend .clear-fix;
+        }
+    }
+}
+
+div.footer {
+    font-size: 1.3rem;
+    color: grey;
+    padding: 20px 0px;
+    background: #f5f3f3;
+
+    div.footer-link {
+        text-align: center;
+
+        ul {
+            list-style: none;
+            display: inline-block;
+            margin: 0;
+            padding: 15px 20px;
+
+            &:after {
+                @extend .clear-fix;
+            }
+
+            li {
+                float: left;
+                text-align: center;
+                padding: 0 10px;
+                border-right: 1px solid grey;
+
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                &:last-child {
+                    border-right: transparent;
+                }
+            }
+        }
+    }
+    div.footer-info {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+div.registration {
+    padding: 30px 0px;
+
+    div.reg-img {
+        text-align: center;
+
+        img {
+            margin: 0px 20px;
+            width: 60px;
+            height: 40px;
         }
     }
 }
@@ -301,3 +354,4 @@ div.my-tab {
         }
     }
 }
+

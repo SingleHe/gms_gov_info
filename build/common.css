@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.clear-fix, div.topbar:after, div.topbar div.right-menu div.link-bar ul.link:after, navi.navibar ul.navi-list:after, div.footer div.footer-link ul:after, div.my-carousel div.carousel-dot-panel ul.carousel-dot:after, div.my-tab div.tab-header ul:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden; }
+
 html {
   font-size: 10px; }
   html body div, html body input, html body ul, html body li {
@@ -6,11 +12,6 @@ html {
   html body div.container {
     width: 1000px;
     margin: 0 auto; }
-  html body .clear-fix, html body div.topbar:after, html body div.topbar div.right-menu div.link-bar ul.link:after, div.topbar div.right-menu div.link-bar html body ul.link:after, html body navi.navibar ul.navi-list:after, navi.navibar html body ul.navi-list:after, html body div.my-carousel div.carousel-dot-panel ul.carousel-dot:after, div.my-carousel div.carousel-dot-panel html body ul.carousel-dot:after, html body div.my-tab div.tab-header ul:after, div.my-tab div.tab-header html body ul:after {
-    content: '';
-    display: block;
-    clear: both;
-    visibility: hidden; }
 
 div.topbar {
   padding: 10px 0px;
@@ -83,6 +84,40 @@ navi.navibar ul.navi-list {
       color: #fff;
       font-size: 2rem;
       text-decoration: none; }
+
+div.footer {
+  font-size: 1.3rem;
+  color: grey;
+  padding: 20px 0px;
+  background: #f5f3f3; }
+  div.footer div.footer-link {
+    text-align: center; }
+    div.footer div.footer-link ul {
+      list-style: none;
+      display: inline-block;
+      margin: 0;
+      padding: 15px 20px; }
+      div.footer div.footer-link ul li {
+        float: left;
+        text-align: center;
+        padding: 0 10px;
+        border-right: 1px solid grey; }
+        div.footer div.footer-link ul li a {
+          text-decoration: none;
+          cursor: pointer; }
+        div.footer div.footer-link ul li:last-child {
+          border-right: transparent; }
+  div.footer div.footer-info p {
+    text-align: center; }
+
+div.registration {
+  padding: 30px 0px; }
+  div.registration div.reg-img {
+    text-align: center; }
+    div.registration div.reg-img img {
+      margin: 0px 20px;
+      width: 60px;
+      height: 40px; }
 
 div.my-carousel {
   position: relative; }

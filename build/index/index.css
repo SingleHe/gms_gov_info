@@ -1,3 +1,9 @@
+.clear-fix, div.section4 ul.link:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden; }
+
 div.section1 {
   padding: 10px; }
   div.section1 div#home-page-carousel {
@@ -20,3 +26,95 @@ div.section1 {
           float: left; }
     div.section1 div#home-page-notice div.tab-content div.content {
       font-size: 1.5rem; }
+
+div.section3 div.column {
+  display: inline-block;
+  width: 480px;
+  margin: 20px 0px 0px; }
+  div.section3 div.column:nth-child(2n) {
+    margin-left: 30px; }
+  div.section3 div.column div.my-tab div.tab-header > div {
+    display: inline-block;
+    width: 120px; }
+  div.section3 div.column div.my-tab div.tab-header > ul {
+    display: inline-block;
+    width: 358px;
+    height: 40px;
+    margin-left: -3px; }
+    div.section3 div.column div.my-tab div.tab-header > ul li {
+      color: #6d6868;
+      padding-top: 10px; }
+  div.section3 div.column div.my-tab div.tab-content {
+    border: 1px solid #e6e0e0;
+    border-top: none; }
+  div.section3 div.column div#zhengwu div.tab-header ul, div.section3 div.column div#zhengfa div.tab-header ul {
+    border-bottom: 2px solid #185cc3; }
+    div.section3 div.column div#zhengwu div.tab-header ul li, div.section3 div.column div#zhengfa div.tab-header ul li {
+      border: none; }
+      div.section3 div.column div#zhengwu div.tab-header ul li.active, div.section3 div.column div#zhengfa div.tab-header ul li.active {
+        color: #185cc3;
+        border-top: 2px solid #185cc3; }
+  div.section3 div.column div#hudong div.tab-header ul, div.section3 div.column div#fuwu div.tab-header ul {
+    border-bottom: 2px solid #077533; }
+    div.section3 div.column div#hudong div.tab-header ul li, div.section3 div.column div#fuwu div.tab-header ul li {
+      border: none; }
+      div.section3 div.column div#hudong div.tab-header ul li.active, div.section3 div.column div#fuwu div.tab-header ul li.active {
+        color: #077533;
+        border-top: 2px solid #077533; }
+  div.section3 div.column div#tongzhi div.tab-header ul, div.section3 div.column div#zhuanti div.tab-header ul {
+    border-bottom: 2px solid #ff0d00; }
+    div.section3 div.column div#tongzhi div.tab-header ul li, div.section3 div.column div#zhuanti div.tab-header ul li {
+      border: none; }
+      div.section3 div.column div#tongzhi div.tab-header ul li.active, div.section3 div.column div#zhuanti div.tab-header ul li.active {
+        color: #ff0d00;
+        border-top: 2px solid #ff0d00; }
+
+div.section4 {
+  margin: 20px 0px;
+  color: grey; }
+  div.section4 ul.link {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.4rem; }
+    div.section4 ul.link li {
+      float: left;
+      width: 167px;
+      margin-right: 40px;
+      text-align: center;
+      position: relative;
+      border: 1px solid #e6e0e0;
+      padding: 5px 0; }
+      div.section4 ul.link li:last-child {
+        margin-right: 0px; }
+  div.section4 div.link-dropdown {
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    top: 27px;
+    border: 1px solid #e6e0e0;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    z-index: 1;
+    opacity: 0; }
+    div.section4 div.link-dropdown ul.link-list {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      list-style: none; }
+      div.section4 div.link-dropdown ul.link-list li {
+        width: 100%;
+        border: none;
+        margin: 0px;
+        padding: 10px 0px;
+        border-top: 1px dashed #e6e0e0; }
+        div.section4 div.link-dropdown ul.link-list li:first-child {
+          border: none; }
+        div.section4 div.link-dropdown ul.link-list li a {
+          text-decoration: none;
+          cursor: pointer;
+          color: grey; }
+    div.section4 div.link-dropdown.active {
+      opacity: 1;
+      transform: translateY(0px); }

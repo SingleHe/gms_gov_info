@@ -14,7 +14,11 @@
         {% include 'partials/_topbar.swig' %}
         {% include 'partials/_topbanner.swig' %}
         {% include 'partials/_navibar.swig' %}
+        
         {% block content %}{% endblock %}
+
+        {% include 'partials/_footer.swig' %}
+        {% include 'partials/_registration.swig' %}
     </div>
 
     <script src="./build/vendor.min.js" type="text/javascript"></script>

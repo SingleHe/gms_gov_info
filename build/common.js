@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$.prototype.slick;$.prototype.slick=function(o){t.call(this,o)}});

@@ -100,7 +100,7 @@ div.topbanner {
 
     img {
         width: 1000px;
-        height: 150px;
+        height: 142px;
         display: block;
     }
 }
@@ -118,11 +118,12 @@ navi.navibar {
             height: 40px;
             padding-top: 9px;
             text-align: center;
-            background-color: red;
-            border-right: 1px solid #a59d9d;
+            border-right: 1px solid #c7bebe;
+            background-image: url(../img/navi_item_bg.png);
+            background-repeat: repeat-x;
             
             &.active {
-                background: #775d5d;
+                background: #b50002;
             }
 
             &:last-child {
@@ -138,6 +139,82 @@ navi.navibar {
 
         &:after {
             @extend .clear-fix;
+        }
+    }
+}
+
+// plugins
+// - slick-carousel
+div.carousel {
+    position: relative;
+
+    div.carousel-content-panel {
+    }
+
+    div.carousel-dot-panel {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background: #b1b1b1;
+
+
+        div.carousel-text-items {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 14px 40px 0px;
+            font-size: 2rem;
+            color: #fff;
+
+            div.carousel-text-item {
+                opacity: 0;
+                transition: all 0.5s;
+                visibility: hidden;
+                position: absolute;
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        ul.carousel-dot {
+            list-style: none;
+            position: absolute;
+            right: 0;
+            margin: 0;
+            padding: 15px 20px;
+
+            &:after {
+                @extend .clear-fix;
+            }
+
+            li {
+                float: left;
+                margin-left: 10px;
+
+                button {
+                    color: #fff;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    display: inline-block;
+                    background: #fff;
+                    border: none;
+                    outline: none;
+                }
+
+                &.slick-active {
+                    button {
+                        color: #e65151;
+                        background: #e65151;
+                    }
+                }
+            }
         }
     }
 }

@@ -11,11 +11,11 @@ var runSequence = require('run-sequence');
 var plumber = require('gulp-plumber');
 
 gulp.task('default', function(cb) {
-    runSequence('clean-build',['vendor-js', 'build-js', 'vendor-css', 'build-sass', 'build-template'], cb);
+    runSequence('clean-build',['vendor-js', 'build-js', 'vendor-css', 'build-copy', 'build-sass', 'build-template'], cb);
 });
 
 gulp.task('dev', function(cb) {
-    runSequence('clean-build',['vendor-js', 'build-js', 'vendor-css', 'build-sass', 'build-template'], 'watch', cb);
+    runSequence('clean-build',['vendor-js', 'build-js', 'vendor-css', 'build-copy', 'build-sass', 'build-template'], 'watch', cb);
 });
 
 gulp.task('clean-build', function () {
@@ -32,6 +32,7 @@ gulp.task('clean-build', function () {
 gulp.task('vendor-js', function () {
     return gulp.src([
                 'node_modules/jquery/dist/jquery.js',
+                'node_modules/slick-carousel/slick/slick.js'
             ])
             .pipe(uglify({
                 preserveComments: 'license'
@@ -53,6 +54,8 @@ gulp.task('build-js', function () {
 gulp.task('vendor-css', function () {
     return gulp.src([
                 'node_modules/normalize.css/normalize.css',
+                'node_modules/slick-carousel/slick/slick.css',
+                'node_modules/slick-carousel/slick/slick-theme.css'
             ])
             .pipe(cssmin())
             .pipe(concat('vendor.min.css'))
@@ -75,6 +78,15 @@ gulp.task('build-template', function () {
     .pipe(gulp.dest('./'));
 
     return stream;
+});
+
+gulp.task('build-copy', function () {
+    return gulp.src([
+                'node_modules/slick-carousel/slick/**/*.*',
+                '!node_modules/slick-carousel/slick/+(*.js|*.*ss|config.rb)',
+                
+            ])
+            .pipe(gulp.dest('build/'));
 });
 
 gulp.task('watch', function() {

@@ -1,0 +1,57 @@
+.photo-box{
+	width: 1000px;
+    margin: 0px auto 20px;
+    border: 1px solid #eaeaea;
+}
+.photo-box .photo-head{
+    height: 75px;
+    padding-top: 2px;
+    position: relative;
+    z-index: 9999;
+}
+.photo-head .photo-title{
+	font-size: 26px;
+    text-align: center;
+    color: #f33;
+    font-family: "微软雅黑";
+    line-height: 40px;
+    padding-bottom: 8px;
+}
+.photo-head .photo-info{
+    height: 36px;
+    background: #fafafa;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #888;
+}
+.photo-head .photo-info .detail{
+	float:left;
+	height:36px;
+	line-height: 36px;
+	margin-left: 230px;
+}
+.photo-head .photo-info .detail span{
+    padding: 0 11px;
+    line-height: 36px;	
+}
+.photo-head .photo-info .detail a{
+	color: #333;
+    text-decoration: none;
+}
+#bdshare{
+	padding:5px 0;
+	margin-left: 20px;
+}
+.photo-box .photo-content{
+	margin: 0 auto;
+    padding: 16px 0 26px;
+    width: 950px;
+    min-height: 500px;
+}
+.ad-gallery{
+	color:#333;
+	line-height:140%;
+	width:950px;
+	margin:0 auto;
+}

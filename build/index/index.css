@@ -5,7 +5,10 @@
   visibility: hidden; }
 
 div.section1 {
-  padding: 10px; }
+  padding: 10px; 
+  border:1px solid #e6e0e0;
+  margin-top:5px;
+}
   div.section1 div#home-page-carousel {
     vertical-align: top;
     width: 550px;
@@ -15,8 +18,10 @@ div.section1 {
   div.section1 div#home-page-notice {
     display: inline-block;
     vertical-align: top;
-    margin-left: 15px;
-    width: 410px;
+    /*margin-left: 15px;*/
+    margin-left:5px;
+    /*width: 410px;*/
+    width:415px;
     border: 1px solid #c5bfbf; }
     div.section1 div#home-page-notice div.tab-header {
       background: #efefef; }
@@ -26,7 +31,13 @@ div.section1 {
           float: left; }
     div.section1 div#home-page-notice div.tab-content div.content {
       font-size: 1.5rem; }
-
+div.section2{
+  margin-top:5px;
+}
+/*给sectiond的header加上边框*/
+/*div.section3 .tab-header{
+  border: 1px solid #e6e0e0;
+}*/
 div.section3 div.column {
   display: inline-block;
   width: 480px;
@@ -35,12 +46,17 @@ div.section3 div.column {
     margin-left: 30px; }
   div.section3 div.column div.my-tab div.tab-header > div {
     display: inline-block;
-    width: 120px; }
+    width: 120px;
+    margin-left:-1px;/*防止换行*/ 
+  }
   div.section3 div.column div.my-tab div.tab-header > ul {
     display: inline-block;
     width: 358px;
-    height: 40px;
-    margin-left: -3px; }
+    /*height: 40px;
+    margin-left: -3px;*/
+    height:39px; 
+    margin-left:-6px;
+  }
     div.section3 div.column div.my-tab div.tab-header > ul li {
       color: #6d6868;
       padding-top: 10px; }

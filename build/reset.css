@@ -1,0 +1,38 @@
+/*页面初始化样式*/
+/*样式重置CSS*/
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+fieldset,img{
+	border:0;
+}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ol,ul,li{
+	list-style:none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/*清除浮动*/
+.clearfloat{
+	zoom:1;
+}
+.clearfloat:after{
+	display: block;
+	clear:both;
+	content:"";
+	visibility: hidden;
+	height: 0;
+}

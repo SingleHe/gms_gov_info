@@ -23,5 +23,17 @@ $(document).ready(function(){
             });
         });
     });
+    //实现左侧菜单栏 选中后添加样式
+    $(".text-left a").each(function(){
+        $this = $(this);
+        $this.click(function(){
+                $(".text-left .leftMenuOn").removeClass("leftMenuOn");
+                $this.parent().addClass("leftMenuOn");
+                return false; 
+            });
+        // if($this[0].href == String(window.location)){
+        //     $this.parent().addClass("leftMenuOn");
+        // }
+    })
 
 });

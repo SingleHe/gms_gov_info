@@ -1,0 +1,273 @@
+/*使用CSS来解决多行文本溢出问题，后改为用dotdotdot.js实现*/
+/*p{
+    text-indent: 2em;
+    overflow: hidden;
+    position: relative;
+}
+p::after{
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 0 5px 14px; 
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);    
+}*/
+/*第一部分，乡镇概况*/
+.town-general{
+	height: 520px;
+    border: 1px solid #d2d2d2;
+    margin: 10px 0 20px 0px;
+    padding: 14px 12px;
+}
+.town-general .photo-banner{
+    width: 970px;
+    height: 310px;
+    position: relative;
+}
+/*cxslide_x焦点图滑动相关css*/
+.cxslide_x{overflow:hidden;position:relative;width:970px;height:310px;}
+.cxslide_x .light_logo{    
+    width: 78px;
+    height: 72px;
+    position: absolute;
+    background: url(../../img/light_logo.png);
+    z-index: 39;
+    /*top: -3px;
+    left: -3px;*/
+}
+.cxslide_x a{color:#eee;text-decoration:none;}
+.cxslide_x .box{overflow:hidden;position:relative;width:970px;height:310px;}
+.cxslide_x .list{overflow:hidden;width:9999px;}
+.cxslide_x .list li{float:left;position:relative;width:970px;}
+.cxslide_x .list img{vertical-align:top;}
+.cxslide_x .list p{line-height:32px; position:absolute;bottom:0;left:0;width:100%;height:32px;color:#eee;font:12px/24px arial;text-indent:12px;
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000',endColorstr='#99000000');
+background:rgba(0,0,0,0.6);
+}
+.cxslide_x .btn{overflow:hidden;position:absolute;bottom:8px;left:50%;margin-left:-65px;}
+.cxslide_x .btn li{float:left;width:12px;height:12px;margin:0 0 0 10px;border-radius:6px;background:#eee;color:#333;font:11px/16px Tahoma;text-align:center;cursor:pointer;}
+.cxslide_x .btn li.selected{background:#f30;color:#fff;}
+.cxslide_x .minus,
+.cxslide_x .plus{position:absolute;top:110px;width:54px;height:54px;background-image:url(../../img/ico_arrow.png);
+                 background-repeat:no-repeat;text-align:center;cursor:pointer;opacity:0.6;filter:alpha(opacity=60);}
+.cxslide_x .minus{left:20px;background-position:0 0;}
+.cxslide_x .plus{right:20px;background-position:-54px 0;}
+.cxslide_x .minus:hover{background-position:0 -58px;}
+.cxslide_x .plus:hover{background-position:-54px -58px;}
+/*-----------------------------------------------------------------------*/
+.town-general .town-desc{
+    margin-top:20px;
+    margin-bottom: 30px;
+    height: 147px;
+}
+.town-desc h2{
+    color: red;
+    font-size: 25px;
+    background-color: #f9f9f9;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 0px 0px 15px;
+}
+.town-desc p{
+    line-height: 26px;
+    font-size: 14px;
+    padding-top: 15px;
+    text-indent: 2em;
+    height: 67px;
+    color: #888888;
+}
+.town-desc p a{
+    color: red;
+    text-decoration: none;
+}
+.town-desc p a:hover{
+    text-decoration: underline;
+}
+.town-desc ul{
+    /*margin-top: 15px;*/
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.town-desc ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+.town-desc ul li span{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: red;
+    margin-right: 6px;
+    margin-bottom:3px;
+}
+.town-desc ul li a{
+    text-decoration: none;
+    color: red;
+}
+.town-desc ul li a:hover{
+    text-decoration: underline;
+}
+/*第二部分 城市建设+经济建设*/
+.desc-part1{
+    /*border: 1px solid #d2d2d2;*/
+    height:345px;
+}
+.desc-title{
+    height: 36px;
+}
+.desc-content{
+    padding:5px;
+    /*overflow: auto;*/
+    border: 1px solid #f6f6f6;
+    border-top:none;
+}
+.desc-content .desc-photo{
+    float: left;
+    width: 170px;
+    height: 110px;
+}
+.desc-content .desc-words{
+    padding: 0px 10px 0px 185px;
+}
+.desc-words p{
+    line-height: 28px;
+    color: #888888;
+    font-size: 14px;
+    text-indent: 2em;
+    width: 365px;
+    height: 112px;
+}
+.desc-content p a{
+    text-decoration: none;
+}
+.desc-content p a:hover{
+    text-decoration: underline;
+}
+.desc-part1 .enco-city{
+    float: left;
+}
+.desc-part1 .enco-city .econ{
+    width: 572px;
+    height: 160px;
+}
+.title-econ{
+    background: url(../../img/economy.png) no-repeat;
+    background-color: #f0f0f0;
+}
+.desc-part1 .enco-city .city{
+    width: 572px;
+    margin-top:25px;
+    height: 160px;	
+}
+.title-city{
+    background: url(../../img/city.png) no-repeat;
+    background-color: #f0f0f0;
+}
+/*右侧的图片栏目*/
+.desc-part1 .honour{
+	height: 345px;
+    border: 1px solid #f0f0f0;
+    float: right;
+    width: 405px;
+    position: relative;
+}
+/*因为基本一样，设置了公共样式*/
+.right-title{
+    height:36px;
+    line-height:36px;  
+}
+.honour-icon{
+    background: url(../../img/honour-title.png) no-repeat;   
+}
+.right-title a{
+    position: absolute;
+    right: 5px;
+    color: #888888; 
+    text-decoration: none;
+}
+.right-title a:hover{
+    text-decoration: underline;
+}
+.right-content{
+    padding: 15px 20px;
+    height: 309px;
+}
+.right-content img{
+    width: 366px;
+    height: 172px;   
+}
+.right-content p{
+    line-height: 22px;
+    font-size: 14px;
+    color: #888888;
+    text-indent: 2em;
+    padding: 25px 0px;
+    height: 80px;
+    width:366px;
+    overflow: hidden;
+    position:relative;
+}
+.right-content .honour-link{
+
+}
+/*.right-content p::after{
+    content:"...";
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 0 5px 14px;
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);
+}*/
+.right-content a{
+    /*padding: 10px 0px;*/
+    text-decoration: none;
+    /*float: right;*/
+}
+.right-content a:hover{
+    text-decoration: underline;
+}
+/*第三部分 文化建设+行政村*/
+.desc-part2{
+	height: 345px;
+    margin: 25px 0 20px 0px;
+}
+.desc-part2 .culture-village{
+	float: left;
+}
+.desc-part2 .culture-village .culture{
+    width: 572px;
+    height: 160px;
+}
+.title-culture{
+    background: url(../../img/culture.png) no-repeat;
+    background-color: #f0f0f0;
+}
+.desc-part2 .culture-village .village{
+    width: 572px;
+    margin-top:25px;
+    height: 160px;	
+}
+.title-village{
+    background: url(../../img/village.png) no-repeat;
+    background-color: #f0f0f0;
+}
+.desc-part2 .photo{
+	height: 345px;
+    border: 1px solid #f0f0f0;
+    float: right;
+    width: 405px;
+    position: relative;
+}
+.picture-icon{
+    background: url(../../img/picture-title.png) no-repeat; 
+}

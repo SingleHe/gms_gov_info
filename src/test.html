@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试多行文本省略</title>
+    <script src="./jquery-1.11.3.js" type="text/javascript"></script>
+    <!--多行文本溢出显示-->
+    <script src="./jquery.dotdotdot.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$(".ellipsis").dotdotdot({
+			    ellipsis    : ' [...] ',
+			    wrap        : 'word',
+			    after       : "a.read_more",
+			    watch       : true,
+			    height      : 70,
+			    callback : function( isTruncated, orgContent ) {
+			        var self = $( this );
+			        self.find(".read_more").click(function(){
+			            toggleRead($(this));
+			        });                
+			        
+			        //if no more text to show hide read more link
+			        if(!isTruncated){                        
+			            self.find("a.read_more").css("display","none");
+			        }
+			        
+			    }
+			});
+
+			// Toggle truncation
+			function toggleRead(caller) {
+			    var callerText = $(caller).text();
+			    var parent = $(caller).closest(".reason");
+			    var isTruncated = $(parent).triggerHandler("isTruncated");
+			    if (isTruncated) {        
+			        // Remove ellipsis
+			        $(parent).trigger("destroy.dot");
+			        // Update text - have to be clever about it, since destroy overwrites after element text values apparently
+			        $(parent).find("a").html("&laquo; Read less");
+			        // Re-add click function since I guess destroy also removes this
+			        $(parent).find("a").click(function () {
+			            toggleRead(this);
+			        });
+			    } else {
+			        
+			      // Update text
+			      $(parent).find("a").html("Read more &raquo;");
+			        
+			      // Re-add ellipsis
+			      $(parent).dotdotdot({
+			          ellipsis    : ' [...] ',
+			          wrap        : 'word',
+			          after       : "a.read_more",
+			          watch       : true,
+			          height      : 70
+			      });
+			      
+			      // Have to re-add click function again, not totally sure why
+			      $(parent).find("a").click(function () {
+			          toggleRead(this);
+			      });
+			    }
+			}
+		});
+    </script>
+    <style type="text/css">
+		.box{
+			width:450px;
+			height:70px;
+		    background-color: #F8F299;
+		    border: 10px solid #fff;
+		    padding: 15px 20px 5px 20px;
+		    margin: 0 auto;
+		    box-shadow: 0 0 5px rgba(0, 0, 0, .3);			
+		}
+		.box .box3{
+			height:70px;
+		}
+    </style>
+</head>
+<body>
+	<div class="box box-3 ellipsis">
+		何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself何盛国是个大傻逼！go fuck yourself！
+		
+	</div>
+	<a href="javascript:void(0)" class="read_more">详细 &raquo;</a>
+	
+</body>
+</html>

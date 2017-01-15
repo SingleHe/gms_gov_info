@@ -1,68 +1,69 @@
 /*使用相对定位修复顶部对齐*/
-.left-menu-rel{
-	position: relative;
+.left-menu-rel {
+    position: relative;
 }
-.weather-abs{
-	position: absolute;
-	top:-6px;
-	left:200px;
+.weather-abs {
+    position: absolute;
+    top: -6px;
+    left: 200px;
 }
-a{
+a {
     text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-.is-mainbox{
-
+.is-mainbox {
 }
+
 /*左侧主要内容*/
-.is-mainbox .content-l{
+.is-mainbox .content-l {
     width: 640px;
     margin-top: 10px;
     float: left;
     position: relative;
 }
+
 /*头部公有样式*/
-#first-li{
-    border-left:0 none;
+#first-li {
+    border-left: 0 none;
 }
-.content-l .my-tab .tab-header{
+.content-l .my-tab .tab-header {
     background: url(../../img/tab-bg.png) repeat-x;
     height: 34px;
     line-height: 34px;
     border-bottom: 1px solid #ef2020;
 }
-.content-l .my-tab .tab-header > ul{
-    height:34px;
+.content-l .my-tab .tab-header > ul {
+    height: 34px;
 }
 .content-l .my-tab .tab-header ul li {
     padding: 0 10px;
     width: auto;
 }
-.content-l .my-tab .tab-header ul li.active{
+.content-l .my-tab .tab-header ul li.active {
     background: #fff;
     border-top: 2px solid #ef2020;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-bottom: none;
 }
-.tab-header ul li a{
+.tab-header ul li a {
     color: #494949;
     text-decoration: none;
 }
-.content-l .my-tab .tab-content{
+.content-l .my-tab .tab-content {
     height: 286px;
 }
-.content-l .my-tab .tab-content .content{
+.content-l .my-tab .tab-content .content {
     padding: 10px;
 }
-.content-l .my-tab .tab-content .content ul{
+.content-l .my-tab .tab-content .content ul {
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.content-l .my-tab .tab-content .content ul li{
+.content-l .my-tab .tab-content .content ul li {
     background: url(../../img/news-list-icon.png) no-repeat left center;
     padding: 0;
     margin: 0;
@@ -70,146 +71,143 @@ a:hover{
     height: 33px;
     line-height: 33px;
     position: relative;
-    cursor: pointer;  
+    cursor: pointer;
 }
-.content-l .my-tab .tab-content .content ul li:hover{
+.content-l .my-tab .tab-content .content ul li:hover {
     background: url(../../img/news-list-icon-on.png) no-repeat left center;
 }
-.content-l .my-tab .tab-content .content ul li a{
+.content-l .my-tab .tab-content .content ul li a {
     text-decoration: none;
     color: #494949;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    display:inline-block;
+    display: inline-block;
     width: 80%;
 }
-.content-l .my-tab .tab-content .content ul li a:hover{
-    color:#bc2f26;
+.content-l .my-tab .tab-content .content ul li a:hover {
+    color: #bc2f26;
     text-decoration: underline;
 }
-.tab-content .pub-date{
+.tab-content .pub-date {
     position: absolute;
     color: #bdbdbd;
     font-size: 14px;
     right: 0;
-    top: 0;   
+    top: 0;
 }
-.is-mainbox .content-l .notice{
-
+.is-mainbox .content-l .notice {
 }
-.is-mainbox .content-l .report{
-
+.is-mainbox .content-l .report {
 }
-.is-mainbox .content-l .employ{
-    margin-bottom: 0px;    
+.is-mainbox .content-l .employ {
+    margin-bottom: 0px;
 }
-.notice,.report,.employ{
-	height: 320px;
+.notice, .report, .employ {
+    height: 320px;
     border: 1px solid #cecece;
     margin-bottom: 20px;
 }
+
 /*右侧主要内容*/
-.is-mainbox .content-r{
-	float: right;
+.is-mainbox .content-r {
+    float: right;
     width: 348px;
     margin-top: 10px;
 }
-.leader,.shopping,.finance{
-	border: 1px solid #cecece;
+.leader, .shopping, .finance {
+    border: 1px solid #cecece;
     margin-bottom: 20px;
     padding: 0 10px;
 }
+
 /*公共的title*/
-h3{
+h3 {
     height: 34px;
     line-height: 34px;
     border-bottom: 1px solid #ccc;
     background: url(../../img/left_title_icon.jpg) no-repeat left center;
     font-weight: inherit;
 }
-h3 a{
+h3 a {
     margin-left: 10px;
     font-weight: bold;
     font-size: 16px;
     color: #494949;
     text-decoration: none;
 }
-.is-mainbox .content-r .leader{
-	height:320px;
+.is-mainbox .content-r .leader {
+    height: 320px;
 }
-.leader .portrait{
+.leader .portrait {
     width: 326px;
     height: 175px;
     margin: 20px 0;
 }
-.leader .portrait .photo{
-/*    width: 146px;
-    height: 175px;*/
-    float: left;
-    /*border: 1px solid #e3e3e1;*/
+.leader .portrait .photo {
+
+    /*    width: 146px;
+        height: 175px;*/
+    float: left;    /*border: 1px solid #e3e3e1;*/
     margin: 0 auto;
 }
-.leader .portrait .photo img{
+.leader .portrait .photo img {
     width: 146px;
     height: 175px;
 }
-.leader .portrait .desc{
+.leader .portrait .desc {
     width: 170px;
-    height:176px;
+    height: 176px;
     float: right;
 }
-.desc h4 a{
+.desc h4 a {
     font-size: 25px;
     color: #333;
 }
-.desc span{
+.desc span {
     font-size: 14px;
     color: #494949
 }
-.desc .duty{
-   margin-top:10px;
-
-   overflow: hidden;
+.desc .duty {
+    margin-top: 10px;
+    overflow: hidden;
 }
-.desc .duty p{
+.desc .duty p {
     padding: 10px 0 0 0;
     color: #bdbdbd;
-    font-size: 12px; 
-    width:170px;
-    height:50px;
-    line-height: 14px;   
+    font-size: 12px;
+    width: 170px;
+    height: 50px;
+    line-height: 14px;
 }
-.leader .others{
+.leader .others {
     text-align: center;
     padding: 15px;
 }
-.leader .others span{
+.leader .others span {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #bdbdbd;
     margin: 0px 5px;
-
 }
-.leader .others a{
+.leader .others a {
     color: #494949;
     font-size: 18px;
-    padding-right: 20px;    
+    padding-right: 20px;
 }
-.is-mainbox .content-r .shopping{
-	height:320px;
+.is-mainbox .content-r .shopping {
+    height: 320px;
 }
-.shopping .shop-list{
+.shopping .shop-list {
     width: 326px;
     height: 285px;
     padding: 10px 0px;
 }
-.shopping .shop-list ul{
-
+.shopping .shop-list ul {
 }
-.shopping .shop-list ul li{
+.shopping .shop-list ul li {
     background: url(../../img/news-list-icon.png) no-repeat left center;
     padding: 0;
     margin: 0;
@@ -217,70 +215,113 @@ h3 a{
     height: 33px;
     line-height: 33px;
     position: relative;
-    cursor: pointer; 
+    cursor: pointer;
 }
-.shopping .shop-list ul li:hover{
+.shopping .shop-list ul li:hover {
     background: url(../../img/news-list-icon-on.png) no-repeat left center;
 }
-.shopping .shop-list ul li a{
+.shopping .shop-list ul li a {
     text-decoration: none;
     color: #494949;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    display:inline-block;
+    display: inline-block;
     width: 100%;
 }
-.shopping .shop-list ul li a:hover{
-    color:#bc2f26;
-    text-decoration: underline; 
+.shopping .shop-list ul li a:hover {
+    color: #bc2f26;
+    text-decoration: underline;
 }
-.is-mainbox .content-r .finance{
-	height:320px;
+.is-mainbox .content-r .finance {
+    height: 320px;
     margin-bottom: 0px;
 }
-
-.box{
+.box {
     display: block;
     width: 131px;
     height: 100px;
-    border:1px solid #d5d5d5; 
-    text-align:center;
+    border: 1px solid #d5d5d5;
+    text-align: center;
     border-bottom: 3px solid #e80909;
-    color:#e80909;
-    /*background: -webkit-linear-gradient(#fff, #e6e6e6); 
-    background: -o-linear-gradient(#fff, #e6e6e6); 
-    background: -moz-linear-gradient(#fff, #e6e6e6); 
-    background: linear-gradient(#fff, #e6e6e6); */
+    color: #e80909;    /*background: -webkit-linear-gradient(#fff, #e6e6e6); 
+        background: -o-linear-gradient(#fff, #e6e6e6); 
+        background: -moz-linear-gradient(#fff, #e6e6e6); 
+        background: linear-gradient(#fff, #e6e6e6); */
 }
-.box h2{
+.box h2 {
     font-size: 38px;
     line-height: 38px;
     margin-top: 20px;
-    color:#e80909;
+    color: #e80909;
 }
-.box p{
-    padding-top:5px;
-    font-size:16px;
-    color:#606060;
+.box p {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #606060;
 }
-.finance .box-left{
-    width: 163px;
-    height: 285px;
-    float: left;
-    padding: 25px 15px;
-
-}
-
-.finance .box-left .report{
-    margin-top:25px;
-}
-.finance .box-right{
+.finance .box-left {
     width: 163px;
     height: 285px;
     float: left;
     padding: 25px 15px;
 }
-.finance .box-right .price{
-    margin-top:25px;
+.finance .box-left .report {
+    margin-top: 25px;
+}
+.finance .box-right {
+    width: 163px;
+    height: 285px;
+    float: left;
+    padding: 25px 15px;
+}
+.finance .box-right .price {
+    margin-top: 25px;
+}
+/*政务公开详情页CSS*/
+.p29{
+    padding: 29px 24px 0 24px
+}
+.p29 table {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+.is-xxgkinfo {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.is-xxgkinfo td {
+    padding: 8px 0;
+    background: #f9f9f9;
+}
+.is-newstitle1 {
+    border-bottom: 2px solid #d1b286;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    line-height: 41px;
+}
+.is-newstitle1 {
+    border-bottom: 2px solid #d1b286;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    line-height: 41px;
+}
+.is-newscontnet {
+    line-height: 26px;
+    padding: 18px 22px 25px 22px;
+    font-size: 14px;
+    color: #333;
+}
+.cen {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+    padding-top: 33px;
+}
+.from {
+    text-align: right;
+    line-height: 40px;
 }

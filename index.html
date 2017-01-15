@@ -9,15 +9,18 @@
     <link rel="stylesheet" type="text/css" href="./build/common.css">
     
     <link rel="stylesheet" type="text/css" href="./build/index/index.css">
+    <script type="text/javascript" src="./src/getDate.js"></script>
 
 </head>
-<body>
+<body onload="getDate();">
     <div class="container">
         <div class="is-head">
             <div id="topbar" class="topbar">
-                <div class="left-menu">
-                    <span class="date">2016年5月3日 星期二</span>
-                    <span class="weather">平遥 16度~23度 空气质量：良</span>
+                <div class="left-menu left-menu-rel">
+                    <span class="date" id="date"></span>
+                    <span class="weather weather-abs" id="weather">
+                        <iframe allowtransparency="true" frameborder="0" width="183" marginheight="5px" style="vertical-align:middle" height="30" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=1&v=0&d=1&bd=0&k=000000&f=ff8080&q=1&e=1&a=1&c=70287&w=183&h=30&align=center"></iframe>
+                    </span>
                 </div>
                 <div class="right-menu">
                     <div class="search-bar">
@@ -40,14 +43,14 @@
             </div>       
             <navi id="navibar" class="navibar">
                 <ul class="navi-list">
-                    <li class="navi-item active"><a href="#">首页</a></li>
-                    <li class="navi-item"><a href="#">认识西洋店</a></li>
-                    <li class="navi-item"><a href="#">政务公开</a></li>
-                    <li class="navi-item"><a href="#">政务天地</a></li>
-                    <li class="navi-item"><a href="#">公共服务</a></li>
-                    <li class="navi-item"><a href="#">公众互动</a></li>
-                    <li class="navi-item"><a href="#">招商引资</a></li>
-                    <li class="navi-item"><a href="#">专题专栏</a></li>
+                    <li class="navi-item active"><a href="./index.html" target="_blank">首页</a></li>
+                    <li class="navi-item"><a href="./about.html" target="_blank">认识西洋店</a></li>
+                    <li class="navi-item"><a href="./gov_pub.html" target="_blank">政务公开</a></li>
+                    <li class="navi-item"><a href="#" target="_blank">政法天地</a></li>
+                    <li class="navi-item"><a href="#" target="_blank">公共服务</a></li>
+                    <li class="navi-item"><a href="./pub_interaction.html" target="_blank">公众互动</a></li>
+                    <li class="navi-item"><a href="#" target="_blank">招商引资</a></li>
+                    <li class="navi-item"><a href="#" target="_blank">专题专栏</a></li>
                 </ul>
             </navi>
         </div>
@@ -239,7 +242,7 @@
                             <ul>
                                 <li class="active" data-index='1'>领导信箱</li>
                                 <li data-index='2'>部门信箱</li>
-                                <li data-index='3'>网上信访</li>
+                                <li data-index='3'>常见问题</li>
                             </ul>
                         </div>
                         <div class="tab-content">

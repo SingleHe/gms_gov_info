@@ -96,7 +96,7 @@
 						<td class="is-785">
 							<div class="is-position bottom10">
 								<div class="is-posbg">
-									您现在的位置：<a href="#">网站首页</a> / <a href="#">公众互动</a> / <a href="#">镇长信箱</a>
+									您现在的位置：<a href="#">网站首页</a> / <a href="#">公众互动</a> / <a href="#">部门信箱</a>
 								</div>
 							</div>
 							<div class="email-table to-leader">
@@ -133,6 +133,64 @@
                                                 <input type="hidden" name="supervision[question_id]"  value=""/>
                                                 <input type="hidden" name="supervision[priority]"  value="3"/>
                                                 <tr class="info-detail">
+                                                    <td align="center"><font color="#FF0000">*</font>&nbsp;问题类型</td>
+                                                    <td align="left" style="padding-left:10px;">
+                                                        <select name="supervision[question_id]" id="question_id">
+                                                            <option value="" selected="">--请选择问题类型--</option>
+                                                            <option value="5438dbec0701eed41d000001">求助</option>                        
+                                                            <option value="5438dbdb0701eed41d000000">举报</option>                        
+                                                            <option value="51a57d99df85a70d545ec0ea">咨询</option>                        
+                                                            <option value="51a57df3df85a70d545ec0eb">投诉</option>                        
+                                                            <option value="51a57e10df85a70d545ec0ec">建议</option>                        
+                                                        </select>
+                                                    </td>
+                                                    <td align="center"><font color="#FF0000">*</font>&nbsp;受理部门</td>
+                                                    <td align="left" style="padding-left:10px;">
+                                                        <select name="supervision[branch_id]" id="branch_id">
+                                                            <option value="" selected="">--请选择部门--</option>
+                                                            <optgroup label="县政府部门"></optgroup>
+                                                            <option value="5435de280701ee3023000000">县科工信局</option>
+                                                            <option value="543b7ff70701ee8825000000">县发改委</option>
+                                                            <option value="543b80240701ee8825000001">县教体局</option>
+                                                            <option value="543f3e930701eee423000002">县环保局</option>
+                                                            <option value="543f3ed70701eee423000003">县人社局</option>
+                                                            <option value="5417e8539a05c26641c204c2">县财政局</option>
+                                                            <option value="543f3f180701ee9c2e000000">县公安局</option>
+                                                            <option value="543f3f3c0701eee423000004">县司法局</option>
+                                                            <option value="543f3fb30701ee7428000002">县文广新局</option>
+                                                            <option value="5417e80a9a05c2813001606c">县卫生局</option>
+                                                            <option value="543f3fe20701ee7428000003">县民政局</option>
+                                                            <option value="543f401e0701ee7428000004">县国土资源局</option>
+                                                            <option value="543f40630701ee7428000005">县交通局</option>
+                                                            <option value="543f409e0701ee3c23000000">县住建局</option>
+                                                            <option value="543f40d00701ee3c23000001">县统计局</option>
+                                                            <option value="543f41100701ee3c23000002">县审计局</option>
+                                                            <option value="543f41340701ee3c23000003">县水利局</option>
+                                                            <option value="543f416c0701ee3c23000004">县农业局</option>
+                                                            <option value="543f41920701ee7428000006">县粮食局</option>
+                                                            <option value="543f41cd0701ee7428000007">县人防办</option>
+                                                            <option value="543f41f00701ee7428000008">县林业局</option>
+                                                            <option value="543f421f0701ee7428000009">县农办</option>
+                                                            <option value="543ceb0e0701ee042a000000">县卫计委</option>
+                                                            <option value="543f62650701ee9c08000002">县商务局</option>
+                                                            <option value="5435f0df0701ee1826000000">县公共资源交易中心</option>
+                                                            <option value="543f62a10701ee9c08000003">县档案局</option>
+                                                            <option value="543f633d0701eea02d000002">县安监局</option>
+                                                            <option value="54503bd80701ee6037000000">县城管局</option>
+                                                            <option value="5462b07f0701ee103e000001">县工商局</option>
+                                                            <option value="546477e70701ee8463000000">县国税局</option>
+                                                            <option value="546478040701eeb83f000000">县地税局</option>
+                                                            <option value="5476c5dd0701ee2050000002">县畜牧局</option>
+                                                            <option value="54db23d885956cde14a5cac4">县食药监局</option>
+                                                            <option value="578c4fe085956cbd5684deb4">县质监局</option>
+                                                            <optgroup label="公共企事业单位"></optgroup>
+                                                            <option value="5417e83b9a05c20f415daf86">县供电公司</option>
+                                                            <option value="543f63730701ee9c08000006">县燃气公司</option>
+                                                            <option value="543f63990701ee9c08000007">县清源水业</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="info-detail">
                                                     <td width="13%" align="center"><font color="#FF0000">*</font>&nbsp;信件标题</td>
                                                     <td width="37%" align="left"><input type="text" name="supervision[subject]" id="title" size="36" class="ipt"/></td>
                                                     <td width="13%" align="center"><font color="#FF0000">*</font>信件是否公开</td>
@@ -143,7 +201,7 @@
                                                 </tr>
                                                 <tr class="info-detail">
                                                     <td align="center"><font color="#FF0000">*</font>&nbsp;信件内容</td>
-                                                    <td align="left" colspan="3" style="line-height:0;"><textarea name="supervision[message]" id="message" rows="16" style="width:97%;" class="ipt2"></textarea></td>
+                                                    <td align="left" colspan="3" style="line-height: 0;"><textarea name="supervision[message]" id="message" rows="16" style="width:97%;" class="ipt2"></textarea></td>
                                                 </tr>
                                                 <tr class="info-detail">
                                                     <td width="13%" align="center"><font color="#FF0000">*</font>&nbsp;验证码</td>
@@ -171,8 +229,8 @@
                                                 var email = $("#email").val();
                                                 var product_id = $("#product_id").val();
                                                 var branch_id = $("#branch_id").val();
-                                                //var question_id = $("#question_id").val();
-                                                var priority = $("#priority").val();
+                                                var question_id = $("#question_id").val();
+                                                /*var priority = $("#priority").val();*/
                                                 var title = $("#title").val();
                                                 var message = $("#message").val();
                                                 var vcode = $("#vcode").val();
@@ -208,14 +266,14 @@
                                                     showNoty(4, 5, "请选择部门！", 3000, true);
                                                     return false;
                                                 }
-                                                //if (question_id === "") {
-                                                //    showNoty(4, 5, "请选择问题类型！", 3000, true);
-                                                //    return false;
-                                                //}
-                                                if (priority === "") {
-                                                    showNoty(4, 5, "请选择信件优先级！", 3000, true);
+                                                if (question_id === "") {
+                                                    showNoty(4, 5, "请选择问题类型！", 3000, true);
                                                     return false;
                                                 }
+                                                /*if (priority === "") {
+                                                    showNoty(4, 5, "请选择信件优先级！", 3000, true);
+                                                    return false;
+                                                }*/
                                                 if (title === "") {
                                                     showNoty(4, 5, "请输入信件标题！", 3000, true);
                                                     return false;

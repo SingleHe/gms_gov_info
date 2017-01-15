@@ -1,0 +1,491 @@
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+:focus{
+	outline-offset: -2px;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.is-mainbox{
+	padding-top: 10px;
+}
+.is-204{
+	width:204px;
+}
+.is-line{
+	border:1px solid #ddd;
+}
+.tips-head{
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: #ddd 1px solid;	
+}
+.tips-log{
+	float: left;
+}
+.tips-head a{
+    color: #e12424;
+    padding-left: 14px;
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+}
+.tips-head a:hover{
+	text-decoration:underline;
+}
+.tips-title{
+	padding-top: 20px;
+    padding-left: 13px;
+    height: 52px;
+}
+.tips-title img{
+	width:77px;
+	height:17px;
+}
+.tips-detail{
+	line-height: 22px;
+    color: #666666;
+    padding: 0 5px;
+}
+.tips-detail p{
+	margin-top:10px;
+	text-indent:2em;
+}
+.tips-detail strong{
+	color:#ee6500;
+}
+.is-785{
+	width:785px;
+}
+.bottom10{
+	margin-bottom:10px;
+}
+.is-position{
+	background: url(../../img/posbg.gif) top repeat-x;
+    color: #666;
+    height: 36px;
+    line-height: 34px;
+    padding: 0 22px;
+}
+.is-posbg{
+    background: url(../../img/posico.gif) left center no-repeat;
+    padding-left: 24px;
+    height: 36px;
+}
+.is-posbg a{
+	color: #666;
+    margin: 0 4px;
+}
+.email-table{
+    min-height: 500px;
+    height: auto !important;
+    /* height: 500px; */
+    padding-bottom: 20px; 
+} 
+.to-leader{
+	width: 785px;
+    border: 1px solid #dddddd;	
+    /* height: 922px; */
+}
+.email-logo{
+	border-bottom: 1px solid #dddddd;
+    height: 32px;
+    line-height: 32px;
+    margin: 19px 19px 0;
+    padding-left: 36px;
+    background: url(../../img/email-icon.gif) 3px 9px no-repeat;
+    margin-bottom: 8px;
+}
+.personal-info{
+	margin: 20px auto auto;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+table.personal-info tr.info-title{
+	color: #666666;
+}
+table.personal-info tr.info-title td{
+	border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+table.personal-info tr.info-detail td{
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 38px;
+    line-height: 38px;	
+}
+table.personal-info tr.info-detail td input.ipt{
+	margin-left: 9px;
+    width: 194px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #dddddd;
+}
+table.personal-info tr.info-detail select{
+	height:25px;
+	line-height:25px;
+	width:195px;
+}
+table.personal-info tr.info-detail option{
+	font-size:13px;
+}
+table.personal-info tr.info-detail optgroup{
+	font-weight:bold;
+	font-size: 13px;
+}
+.ipt2{
+	line-height: 20px;
+    border: 1px solid #ddd;
+    width: 45%;
+    height: 20px;
+}
+table.personal-info tr.info-detail td textarea.ipt2{
+    margin: 10px;
+    border: 1px solid #dddddd;
+    height: 420px;
+}
+.btn-email{
+	text-align: center;
+    margin-top: 8px;
+}
+.btn-email input{
+	font-family: "微软雅黑";
+    font-size: 18px;
+    color: #ffffff;
+    width: 96px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 46px;
+    letter-spacing: 5px;
+}
+.btn-email input.ipt-submit{
+    background: url(../../img/email-btnbg-submit.gif) 0 0 no-repeat;
+}
+.btn-email input.ipt-reset{
+	background: url(../../img/email-btnbg-reset.gif) 0 0 no-repeat;
+}
+/*领导信件列表css*/
+.list-leader{
+	min-height: 836px;
+    padding: 10px 10px 0;
+    border: 1px solid #dddddd;
+    margin: auto;
+}
+.list-leader .title{
+	height: 25px;
+    border-bottom: 1px solid #f10000;
+    background: url(../../img/emailList-leader.gif) 0 0 no-repeat;
+    padding-left: 13px;
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+    line-height: 25px;
+}
+.list-leader .title span{
+    float: right;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: url(../../img/emailList-icon.gif) no-repeat left center;	
+}
+.list-leader .title span a{
+	color:#f00;
+}
+.list-leader .title strong{
+	color: #ffffff;
+    font-size: 14px;
+    display: block;
+    line-height: 25px;
+}
+/*信件标题*/
+table.is-xjbt{
+	height: 24px;
+    line-height: 24px;
+    border-bottom: 2px solid #d3baae;
+    color: #b17354;
+    margin-top: 14px;
+}
+/*信件内容*/
+table.is-xjnr{
+	line-height: 30px;
+    color: #dedede;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+table.is-xjnr a{
+	display: block;
+    padding-left: 21px;
+    color: #666666;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 360px;
+    height:30px;
+}
+table.is-xjnr a img{
+	vertical-align: middle;
+	margin-right:5px; 
+}
+table.is-xjnr td.is-dates{
+	color: #666666;
+}
+table.is-xjnr td.is-yhf{
+	color:#0064cb;
+}
+#page_list{
+	line-height: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Arial';
+    border-top: 1px solid #dddddd;
+}
+#page_list .currentpage{
+	border: 1px solid #e0e0e0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    color: #868585;
+    text-decoration: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+}
+#page_list .page{
+	border: 1px solid #e0e0e0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #868585;
+    text-decoration: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+}
+/*部门信件列表页*/
+.elist-dept{
+	min-height: 836px;
+    padding: 10px 10px 0;
+    border: 1px solid #dddddd;
+    margin: auto;
+}
+.depts-list{
+	width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.ntilte5{
+	width: 98%;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #c00;
+}
+.ntilte5 #nmores {
+    float: right;
+    text-align: right;
+    width: 180px;
+    padding-right: 10px;
+    padding-top: 5px;
+    color: #f00;
+    font-weight: bold;
+}
+.ntilte5 #nmores a {
+    color: #f00;
+}
+.ntilte5 #ntilte {
+    float: left;
+    width: 50%;
+    height: 24px;
+    padding-top: 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #c00;
+    /*border-bottom: 1px solid #f47433;*/
+}
+.c10 {
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+    clear: both;
+}
+.depts{
+	width: 706px;
+    margin: 0 auto;
+    text-align: center;
+}
+.depts-title{
+	width: auto;
+    height: 26px;
+    margin: 0;
+    text-align: center;
+    background: #fff url(../../img/dept-columnsbg.gif) bottom repeat-x;
+    width: 706px;
+    overflow: hidden;
+}
+.depts-type{
+	    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.depts-type .aon{
+	border: 1px solid #f6d18d;
+    border-bottom: none;
+    background: #fff;
+}
+.depts-type li {
+    float: left;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    line-height: 25px;
+}
+.depts .depts-box{
+    width: auto;
+    height: 180px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #f6d18d;
+    border-top: none;
+    overflow: auto;
+    overflow-y: auto;
+}
+.c4 {
+    width: 100%;
+    height: 4px;
+    overflow: hidden;
+    clear: both;
+}
+.depts .depts-box li {
+    line-height: 24px;
+    width: 99px;
+    height: 24px;
+    float: left;
+    text-align: left;
+    margin-left: 15px;
+    display: inline;
+}
+.depts .depts-box li a{
+	color:#333;
+}
+.c4{
+	width: 100%;
+    height: 4px;
+    overflow: hidden;
+    clear: both;
+}
+
+/*修复select下拉选择框的样式*/
+.select-fix{
+	height:19px;
+}
+.select-fix option{
+	font-size:13px;
+}
+.select-fix optgroup{
+	font-weight:bold;
+	font-size:13px;
+}
+/*信件详细页CSS*/
+.box-line{
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.is-contentbox{
+    clear: both;
+    padding: 20px 20px 0;
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+}
+.is-mailnr{
+    padding: 20px;
+}
+.is-mailinfo {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 18px;
+    color: #666;
+    background: #fafafa;
+}
+.is-mailinfo .is-mailspan {
+    padding: 0 14px;
+}
+.is-mailinfo .red {
+    color: #e20000;
+}
+.is-mailwen {
+    padding: 15px;
+    line-height: 24px;
+    color: #333;
+    text-indent: 2em;
+    min-height: 300px;
+    _height: 300px;
+}
+.is-mailhf {
+    position: relative;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 0 15px 20px 15px;
+}
+.is-mailarr {
+    position: absolute;
+    top: -10px;
+    left: 32px;
+}
+.is-hftitle {
+    height: 47px;
+    border-bottom: 1px dashed #a9a9a9;
+    line-height: 47px;
+    font-size: 20px;
+    color: #c50000;
+    font-family: "微软雅黑";
+}
+.is-hftitle .is-hfdw {
+    float: right;
+    color: #007fd8;
+    background: url(../../img/editico.jpg) left 14px no-repeat;
+    padding-left: 20px;
+    font-size: 12px;
+    font-family: "宋体";
+    font-weight: normal;
+    margin-left: 20px;
+}
+.is-hfcontent {
+    color: #555;
+    line-height: 24px;
+    padding: 16px 4px;
+}
+.is-satisfied{
+    height: 30px;
+    line-height: 30px;
+}
+.ratingForm{
+/*    padding:5px 0;*/
+    height:21px;
+    line-height:21px;
+}
+.ratingForm input{
+
+}
+.ratingForm .ratingBtn{
+    width:42px;
+    height:21px;
+}

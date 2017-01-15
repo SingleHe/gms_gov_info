@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>西洋店人民政府</title>
+
+    <link rel="stylesheet" type="text/css" href="./build/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="./build/common.css">
+    <link rel="stylesheet" type="text/css" href="./build/reset.css">
+    <link rel="stylesheet" type="text/css" href="./build/index/index.css">
+    <link rel="stylesheet" type="text/css" href="./build/email/email.css">
+    <script src="./build/vendor.min.js" type="text/javascript"></script>
+    <script src="./src/getDate.js" type="text/javascript"></script>
+</head>
+<body onload="getDate()">
+	<!--整个页面的主体部分-->
+	<div class="container">
+        <div class="is-head">
+            <div id="topbar" class="topbar">
+                <div class="left-menu left-menu-rel">
+                    <span class="date" id="date"></span>
+                    <span class="weather weather-abs" id="weather">
+                        <iframe allowtransparency="true" frameborder="0" width="183" marginheight="5px" style="vertical-align:middle" height="30" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=1&v=0&d=1&bd=0&k=000000&f=ff8080&q=1&e=1&a=1&c=70287&w=183&h=30&align=center"></iframe>
+                    </span>
+                </div>
+                <div class="right-menu">
+                    <div class="search-bar">
+                        <form id="searchForm" action="./search" method="get">
+                            <input id="searchKeyword" type="text" name="keyword" placeholder="请输入关键字">
+                            <button id="searchBtn">搜索</button>
+                        </form>
+                    </div>
+                    <div class="link-bar">
+                        <ul class="link">
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">加入收藏</a></li>
+                            <li><a href="#">设为首页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="topbanner" class="topbanner">
+                <img src="./img/topbanner.png">
+            </div>       
+            <navi id="navibar" class="navibar">
+                <ul class="navi-list">
+                    <li class="navi-item active"><a href="#">首页</a></li>
+                    <li class="navi-item"><a href="#">认识西洋店</a></li>
+                    <li class="navi-item"><a href="#">政务公开</a></li>
+                    <li class="navi-item"><a href="#">政法天地</a></li>
+                    <li class="navi-item"><a href="#">公共服务</a></li>
+                    <li class="navi-item"><a href="#">公众互动</a></li>
+                    <li class="navi-item"><a href="#">招商引资</a></li>
+                    <li class="navi-item"><a href="#">专题专栏</a></li>
+                </ul>
+            </navi>
+        </div>
+        <!--页面主体结构-->
+        <div class="is-mainbox bot10">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr valign="top">
+						<td class="is-204">
+							<div class="is-line">
+								<div class="tips-head">
+									<span class="tips-log">
+										<img src="./img/tips-icon.gif" width="33" height="28">
+									</span>
+									<a href="#">镇长信箱</a>
+								</div>
+								<div>
+									<div class="tips-title">
+										<img src="./img/email-tips.gif">
+									</div>
+									<div class="tips-detail">
+										尊敬的网民朋友：
+                                            <p>欢迎您通过网络问政平台给部门和乡镇写信。您在撰写信件时，请遵守国务院《信访条例》、《平舆县人民政府信访条例》以及平舆县人民政府有关信访工作规定。您的来信将按照&quot;属地管理、分级负责，谁主管、谁负责，依法、及时、就地解决问题的原则&quot;受理，并按《平舆县政府门户网站网民来信办理工作制度》规定，及时呈报、交办、督办、回复！</p>
+                                            <p>对所有来信以受理为原则，不受理为例外。对以下来信，将不予受理： <br />
+                                                <strong>一、</strong>无实质性内容，或内容不具体，无法核实的；<br />
+                                                <strong>二、</strong>具有商业广告性质或要求提供赞助的；<br />
+                                                <strong>三、</strong>纯属个人问题，与政府职责无关的；<br />
+                                                <strong>四、</strong>不属政府管理权限范围的；<br />
+                                                <strong>五、</strong>已进入仲裁、司法程序的；<br />
+                                                <strong>六、</strong>已定性且实行信访终结处理的；<br />
+                                                <strong>七、</strong>匿名或其他可以不予受理的。<br />
+                                                对来信人的个人信息我们将按有关规定加以保护，来信是否在网站发布，我们将根据您许可状态及来信内容进行判定。</p>
+                                            <p><strong>[注意事项]</strong><br />
+                                                1、没有按要求正确填写信息的将不予受理；带&quot;*&quot;为必填项！<br />
+                                                2、来信回复后，请您对答复作出满意度评价。
+                                            </p>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td class="is-785">
+							<div class="is-position bottom10">
+								<div class="is-posbg">
+									您现在的位置：<a href="#">网站首页</a> / <a href="#">公众互动</a> / <a href="#">镇长信箱</a>
+								</div>
+							</div>
+                            <div class="elist-dept">
+                                <div class="depts-list">
+                                    <div class="ntilte5">
+                                        <div id="nmores"><img src="./img/emailList-icon.gif" align="absmiddle">&nbsp;<a href="/nocache/supervision/write/product_id=3/">给部门写信</a></div>
+                                        <div id="ntilte"><img src="./img/dept-arrows.gif" align="absmiddle">&nbsp;<b>部门列表</b></div>
+                                    </div>
+                                    <div class="c10"></div>
+                                    <div class="depts">
+                                        <div class="depts-title">
+                                            <ul class="depts-type">
+                                                <li id="spB_0" class="aon" onmouseover="isShowIndex('spB_0', 'dtB_0', 'B_', 'Smore1', '#', '2')">县政府部门</li>
+                                                <li id="spB_1" onmouseover="isShowIndex('spB_1', 'dtB_1', 'B_', 'Smore1', '#', '2')" class="aoff">公共企事业单位</li>
+                                            </ul>
+                                        </div>
+                                        <div class="depts-box">
+                                            <div class="c4"></div>
+                                                <span id="dtB_0">
+                                                    <ul>
+                                                        <li ><a href="/supervision/branch/5435de280701ee3023000000/">县科工信局</a></li>
+                                                        <li ><a href="/supervision/branch/543b7ff70701ee8825000000/">县发改委</a></li>
+                                                        <li ><a href="/supervision/branch/543b80240701ee8825000001/">县教体局</a></li>
+                                                        <li ><a href="/supervision/branch/543f3e930701eee423000002/">县环保局</a></li>
+                                                        <li ><a href="/supervision/branch/543f3ed70701eee423000003/">县人社局</a></li>
+                                                        <li ><a href="/supervision/branch/5417e8539a05c26641c204c2/">县财政局</a></li>
+                                                        <li ><a href="/supervision/branch/543f3f180701ee9c2e000000/">县公安局</a></li>
+                                                        <li ><a href="/supervision/branch/543f3f3c0701eee423000004/">县司法局</a></li>
+                                                        <li ><a href="/supervision/branch/543f3fb30701ee7428000002/">县文广新局</a></li>
+                                                        <li ><a href="/supervision/branch/5417e80a9a05c2813001606c/">县卫生局</a></li>
+                                                        <li ><a href="/supervision/branch/543f3fe20701ee7428000003/">县民政局</a></li>
+                                                        <li ><a href="/supervision/branch/543f401e0701ee7428000004/">县国土资源局</a></li>
+                                                        <li ><a href="/supervision/branch/543f40630701ee7428000005/">县交通局</a></li>
+                                                        <li ><a href="/supervision/branch/543f409e0701ee3c23000000/">县住建局</a></li>
+                                                        <li ><a href="/supervision/branch/543f40d00701ee3c23000001/">县统计局</a></li>
+                                                        <li ><a href="/supervision/branch/543f41100701ee3c23000002/">县审计局</a></li>
+                                                        <li ><a href="/supervision/branch/543f41340701ee3c23000003/">县水利局</a></li>
+                                                        <li ><a href="/supervision/branch/543f416c0701ee3c23000004/">县农业局</a></li>
+                                                        <li ><a href="/supervision/branch/543f41920701ee7428000006/">县粮食局</a></li>
+                                                        <li ><a href="/supervision/branch/543f41cd0701ee7428000007/">县人防办</a></li>
+                                                        <li ><a href="/supervision/branch/543f41f00701ee7428000008/">县林业局</a></li>
+                                                        <li ><a href="/supervision/branch/543f421f0701ee7428000009/">县农办</a></li>
+                                                        <li ><a href="/supervision/branch/543ceb0e0701ee042a000000/">县卫计委</a></li>
+                                                        <li ><a href="/supervision/branch/543f62650701ee9c08000002/">县商务局</a></li>
+                                                        <li ><a href="/supervision/branch/5435f0df0701ee1826000000/">县公共资源交易</a></li>
+                                                        <li ><a href="/supervision/branch/543f62a10701ee9c08000003/">县档案局</a></li>
+                                                        <li ><a href="/supervision/branch/543f633d0701eea02d000002/">县安监局</a></li>
+                                                        <li ><a href="/supervision/branch/54503bd80701ee6037000000/">县城管局</a></li>
+                                                        <li ><a href="/supervision/branch/5462b07f0701ee103e000001/">县工商局</a></li>
+                                                        <li ><a href="/supervision/branch/546477e70701ee8463000000/">县国税局</a></li>
+                                                        <li ><a href="/supervision/branch/546478040701eeb83f000000/">县地税局</a></li>
+                                                        <li ><a href="/supervision/branch/5476c5dd0701ee2050000002/">县畜牧局</a></li>
+                                                        <li ><a href="/supervision/branch/54db23d885956cde14a5cac4/">县食药监局</a></li>
+                                                        <li ><a href="/supervision/branch/578c4fe085956cbd5684deb4/">县质监局</a></li>
+                                                    </ul>
+                                                </span>
+                                                <span id="dtB_1" style="display: none; ">
+                                                    <ul>
+                                                        <li ><a href="/supervision/branch/5417e83b9a05c20f415daf86/">县供电公司</a></li>
+                                                        <li ><a href="/supervision/branch/543f63730701ee9c08000006/">县燃气公司</a></li>
+                                                        <li ><a href="/supervision/branch/543f63990701ee9c08000007/">县清源水业</a></li>
+                                                    </ul>
+                                                </span>
+                                            <div class="c4"></div>
+                                        </div>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border:1px solid #FBE5B6;" bgcolor="#FEFDF8">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="23%" align="left">&nbsp;<img src="./img/email-search.gif" align="absmiddle"></td>
+                                                    <td width="77%" height="34" align="left">来信统计：今天来信：<span class="fredmore">0</span>件 今天回复：<span class="fredmore">0</span>件 来信总数：<span class="fredmore">&nbsp;247&nbsp;</span>件 回复来信：<span class="fredmore">&nbsp;148&nbsp;</span>件</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" align="center" height="40">
+                                                        <form method="GET" action="/index.php?c=supervisionSearch">
+                                                            <table width="96%" border="0" align="center" cellpadding="0" cellspacing="3">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <input type="hidden" name="c" value="supervisionSearch">
+                                                                            <select class="select-fix" name="question_id" id="A1" class="ipt">
+                                                                                <option value="">-按信件分类-</option>
+                                                                                <option value="">求助</option>
+                                                                                <option value="">举报</option>
+                                                                                <option value="">咨询</option>
+                                                                                <option value="">投诉</option>
+                                                                                <option value="">建议</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td align="center">
+                                                                            <select class="select-fix" name="process_status">
+                                                                                <option value="">-按办理状态-</option>
+                                                                                <option value="1">新信件</option>
+                                                                                <option value="2">处理中</option>
+                                                                                <option value="3">已处理</option>
+                                                                                <option value="4">再追问</option>
+                                                                                <option value="5">已解决</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td align="center">
+                                                                            <select class="select-fix" name="branch_id">
+                                                                                <option value="">-按所属部门-</option>
+                                                                                <optgroup label="县政府部门"></optgroup>
+                                                                                <option value="5435de280701ee3023000000">县科工信局</option>
+                                                                                <option value="543b7ff70701ee8825000000">县发改委</option>
+                                                                                <option value="543b80240701ee8825000001">县教体局</option>
+                                                                                <option value="543f3e930701eee423000002">县环保局</option>
+                                                                                <option value="543f3ed70701eee423000003">县人社局</option>
+                                                                                <option value="5417e8539a05c26641c204c2">县财政局</option>
+                                                                                <option value="543f3f180701ee9c2e000000">县公安局</option>
+                                                                                <option value="543f3f3c0701eee423000004">县司法局</option>
+                                                                                <option value="543f3fb30701ee7428000002">县文广新局</option>
+                                                                                <option value="5417e80a9a05c2813001606c">县卫生局</option>
+                                                                                <option value="543f3fe20701ee7428000003">县民政局</option>
+                                                                                <option value="543f401e0701ee7428000004">县国土资源局</option>
+                                                                                <option value="543f40630701ee7428000005">县交通局</option>
+                                                                                <option value="543f409e0701ee3c23000000">县住建局</option>
+                                                                                <option value="543f40d00701ee3c23000001">县统计局</option>
+                                                                                <option value="543f41100701ee3c23000002">县审计局</option>
+                                                                                <option value="543f41340701ee3c23000003">县水利局</option>
+                                                                                <option value="543f416c0701ee3c23000004">县农业局</option>
+                                                                                <option value="543f41920701ee7428000006">县粮食局</option>
+                                                                                <option value="543f41cd0701ee7428000007">县人防办</option>
+                                                                                <option value="543f41f00701ee7428000008">县林业局</option>
+                                                                                <option value="543f421f0701ee7428000009">县农办</option>
+                                                                                <option value="543ceb0e0701ee042a000000">县卫计委</option>
+                                                                                <option value="543f62650701ee9c08000002">县商务局</option>
+                                                                                <option value="5435f0df0701ee1826000000">县公共资源交易中心</option>
+                                                                                <option value="543f62a10701ee9c08000003">县档案局</option>
+                                                                                <option value="543f633d0701eea02d000002">县安监局</option>
+                                                                                <option value="54503bd80701ee6037000000">县城管局</option>
+                                                                                <option value="5462b07f0701ee103e000001">县工商局</option>
+                                                                                <option value="546477e70701ee8463000000">县国税局</option>
+                                                                                <option value="546478040701eeb83f000000">县地税局</option>
+                                                                                <option value="5476c5dd0701ee2050000002">县畜牧局</option>
+                                                                                <option value="54db23d885956cde14a5cac4">县食药监局</option>
+                                                                                <option value="578c4fe085956cbd5684deb4">县质监局</option>
+                                                                                <optgroup label="公共企事业单位"></optgroup>
+                                                                                <option value="5417e83b9a05c20f415daf86">县供电公司</option>
+                                                                                <option value="543f63730701ee9c08000006">县燃气公司</option>
+                                                                                <option value="543f63990701ee9c08000007">县清源水业</option>
+                                                                                <!-- <optgroup label="各乡镇办事处"></optgroup>
+                                                                                <option value="543f63f80701ee9c08000008">古槐办事处</option>
+                                                                                <option value="543f64220701eea02d000003">清河办事处</option>
+                                                                                <option value="543f644a0701ee9c08000009">东皇办事处</option>
+                                                                                <option value="543f64750701eea02d000004">玉皇庙乡</option>
+                                                                                <option value="543f649b0701ee9c0800000a">郭楼镇</option>
+                                                                                <option value="543f64c30701eea02d000005">杨埠镇</option>
+                                                                                <option value="543f64ec0701ee9c0800000b">东和店镇</option>
+                                                                                <option value="543f65880701eea02d000008">庙湾镇</option>
+                                                                                <option value="543f66000701ee1401000000">高杨店镇</option>
+                                                                                <option value="543f66230701eea02d000009">十字路乡</option>
+                                                                                <option value="543f66440701ee1401000001">射桥镇</option>
+                                                                                <option value="543f66710701ee1401000002">阳城镇</option>
+                                                                                <option value="543f66a20701ee1401000003">万冢镇</option>
+                                                                                <option value="543f66c40701eea02d00000a">李屯镇</option>
+                                                                                <option value="543f66f60701ee1401000004">老王岗乡</option>
+                                                                                <option value="543f671b0701eea02d00000b">辛店乡</option>
+                                                                                <option value="543f673c0701ee1401000005">西洋店镇</option>
+                                                                                <option value="543f67680701eea02d00000c">万金店镇</option>
+                                                                                <option value="543f67900701ee1401000006">双庙乡</option> -->
+                                                                            </select>
+                                                                        </td>
+                                                                        <td align="right">
+                                                                            关键字：
+                                                                            <input type="text" name="keywords" value="" style="border:1px solid #CC2A14; width:130px; height:19px;line-height: 19px">
+                                                                        </td>
+                                                                        <td align="left">
+                                                                            <input type="image" name="image" src="./img/email-btnsearch.gif">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--部门列表-->
+                                </div>
+                                <strong>信件列表</strong>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="is-xjbt">
+                                        <tbody>
+                                            <tr>
+                                                <td width="100" align="center">&nbsp;&nbsp;部门</td>
+                                                <td width="" align="center">|</td>
+                                                <td width="400">&nbsp;&nbsp;来信标题</td>
+                                                <td width="" align="center">|</td>
+                                                <td width="100" align="center">来信时间</td>
+                                                <td width="" align="center">|</td>
+                                                <td width="62" align="center">处理状态</td>
+                                                <td width="" align="center">|</td>
+                                                <td width="62" align="center">浏览次数</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="is-xjnr">
+                                        <tbody>
+                                            <tr>    
+                                                <td width="100" align="center" class="is-dates">县教体局</td>
+                                                <td width="" align="center">|</td>
+                                                <td width="400">
+                                                    <a href="/supervision/detail/5807eeef85956c771c8144aa.html" target="_blank">小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片小区入学划片
+                                                    </a>
+                                                </td>
+                                                <td width="" align="center">|</td>
+                                                <td width="100" align="center" class="is-dates">2016-10-20</td>
+                                                <td width="" align="center">|</td>
+                                                <td width="62" align="center" class="is-yhf"><span class="red">已解决</span></td>
+                                                <td width="" align="center">|</td>
+                                                <td width="62" align="center" class="is-dates">357</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div id="page_list">
+                                        <span class="currentpage">1 / 11</span><span class="currentpage">1</span><a href="/supervision/productList/product_id=3/page-2/"><span class="page">2</span></a><a href="/supervision/productList/product_id=3/page-3/"><span class="page">3</span></a><span>....</span> <a href="/supervision/productList/product_id=3/page-11/"><span class="page">尾页</span></a>
+                                    </div>
+                            </div>
+						</td>
+					</tr>
+				</tbody>
+            </table>
+        </div>
+        <!--页面底部-->
+        <div id="footer" class="footer">
+            <div class="footer-link">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">法律声明</a></li>
+                    <li><a href="">内容纠错</a></li>
+                    <li><a href="">站点地图</a></li>
+                    <li><a href="">旧版回顾</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>xxxxxxxxxx人民政府  ©2014 xICP备09060159号-1   邮编：528xx9  电子邮箱：info@bxxx.gov.cn </p>
+                <p>联系电话：07xx-865xxxx  传真：0760－86xxxxxxx </p>
+                <p>主办单位：xxxxxx镇人民政府</p>
+            </div>
+            <div id="registration" class="registration">
+                <div class="reg-img">
+                    <a href="#"><img src="./img/foot-l1.jpg" alt=""></a>
+                    <a href="#"><img src="./img/foot-l2.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>         
+	</div>
+    <!--首页左侧微信链接-->
+    <div class="pub-tools">
+        <div class="forum pub-menus"><a href="http://bbs.pingyu.gov.cn/" title="论坛" target="_blank">论坛</a></div>
+        <div class="wechat pub-menus"><a href="/weixin/" title="微信" target="_blank" >微信</a></div>
+        <div class="tencent pub-menus"><a href="http://t.qq.com/py_gov?preview" title="腾讯微博" target="_blank" >腾讯微博</a></div>
+        <div class="sina pub-menus"><a href="http://weibo.com/pyzfb" title="新浪微博" target="_blank" >新浪微博</a></div>
+        <div class="backtop" id="toTop"><a href="#gotop" title="返回顶部"></a></div>
+    </div>
+    <div class="qr-code">
+        <a href="/weixin/" target="_blank"><img src="./img/qrcode.png" width="97" height="105"></a>
+    </div>
+    <!--<script src="./build/common.js" type="text/javascript"></script>-->
+    <script src="./src/common.js" type="text/javascript"></script>
+    <script src="./build/index/index.js" type="text/javascript"></script>
+    <script src="./src/scrollTop.js" type="text/javascript"></script>
+    <!--多行文本溢出显示-->
+    <script src="./src/jquery.dotdotdot.js" type="text/javascript"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function() {
+            $(".wrapper").dotdotdot({
+                // configuration goes here
+            });
+        });
+        //实现部门栏目切换
+        function killerrors() { return true; } 
+        window.onerror = killerrors; 
+        function isShowIndex(tab_id,div_id,who,aId,aHref,num){ 
+            for(var i = 0;i < num;i++){ 
+                document.getElementById( "dt"+who+i).style.display="none" ; 
+                document.getElementById( "sp"+who+i).className="aoff" ; 
+            } 
+            document.getElementById(div_id).style.display="block" ;
+            document.getElementById(tab_id).className="aon" ; 
+            document.getElementById(aId).href=aHref; 
+        }
+
+    </script>
+</body>
+</html>
